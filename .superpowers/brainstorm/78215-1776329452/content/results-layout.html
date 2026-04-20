@@ -1,0 +1,104 @@
+<h2>How should proofreading results appear?</h2>
+<p class="subtitle">Pick the layout that feels most useful for reviewing and fixing issues</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-family:sans-serif;font-size:12px;padding:8px;background:#f5f5f5;border-radius:4px">
+        <div style="font-weight:600;margin-bottom:6px;color:#333">3 issues found</div>
+        <div style="background:#fff;border-left:3px solid #e74c3c;padding:6px 8px;margin-bottom:6px;border-radius:2px">
+          <div style="color:#e74c3c;font-size:10px;font-weight:600">GRAMMAR</div>
+          <div style="color:#333;margin:2px 0">"Their going to the store"</div>
+          <div style="color:#666;font-size:10px">→ "They're going to the store"</div>
+          <div style="display:flex;gap:4px;margin-top:4px">
+            <span style="background:#2ecc71;color:#fff;padding:2px 6px;border-radius:3px;font-size:10px">Accept</span>
+            <span style="background:#eee;color:#555;padding:2px 6px;border-radius:3px;font-size:10px">Ignore</span>
+          </div>
+        </div>
+        <div style="background:#fff;border-left:3px solid #f39c12;padding:6px 8px;margin-bottom:6px;border-radius:2px">
+          <div style="color:#f39c12;font-size:10px;font-weight:600">STYLE</div>
+          <div style="color:#333;margin:2px 0">"In order to achieve..."</div>
+          <div style="color:#666;font-size:10px">→ "To achieve..."</div>
+          <div style="display:flex;gap:4px;margin-top:4px">
+            <span style="background:#2ecc71;color:#fff;padding:2px 6px;border-radius:3px;font-size:10px">Accept</span>
+            <span style="background:#eee;color:#555;padding:2px 6px;border-radius:3px;font-size:10px">Ignore</span>
+          </div>
+        </div>
+        <div style="background:#fff;border-left:3px solid #9b59b6;padding:6px 8px;border-radius:2px">
+          <div style="color:#9b59b6;font-size:10px;font-weight:600">TONE</div>
+          <div style="color:#333;margin:2px 0">"You must complete..."</div>
+          <div style="color:#666;font-size:10px">→ "Please complete..."</div>
+          <div style="display:flex;gap:4px;margin-top:4px">
+            <span style="background:#2ecc71;color:#fff;padding:2px 6px;border-radius:3px;font-size:10px">Accept</span>
+            <span style="background:#eee;color:#555;padding:2px 6px;border-radius:3px;font-size:10px">Ignore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Flat issue list</h3>
+      <p>All issues listed top-to-bottom. Each shows original text, suggestion, and Accept/Ignore buttons. Color-coded by category.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-family:sans-serif;font-size:12px;padding:8px;background:#f5f5f5;border-radius:4px">
+        <div style="display:flex;gap:6px;margin-bottom:6px">
+          <span style="background:#e74c3c;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px">Grammar 1</span>
+          <span style="background:#f39c12;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px">Style 1</span>
+          <span style="background:#9b59b6;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px">Tone 1</span>
+        </div>
+        <div style="border:1px solid #ddd;border-radius:4px;overflow:hidden">
+          <div style="background:#e74c3c;color:#fff;padding:4px 8px;font-size:10px;font-weight:600">GRAMMAR (1)</div>
+          <div style="background:#fff;padding:6px 8px">
+            <div style="color:#333;margin-bottom:2px">"Their going to the store"</div>
+            <div style="color:#666;font-size:10px;margin-bottom:4px">→ "They're going to the store"</div>
+            <div style="display:flex;gap:4px">
+              <span style="background:#2ecc71;color:#fff;padding:2px 6px;border-radius:3px;font-size:10px">Accept</span>
+              <span style="background:#eee;color:#555;padding:2px 6px;border-radius:3px;font-size:10px">Ignore</span>
+            </div>
+          </div>
+          <div style="background:#f39c12;color:#fff;padding:4px 8px;font-size:10px;font-weight:600;margin-top:4px">STYLE (1) ▾</div>
+          <div style="background:#9b59b6;color:#fff;padding:4px 8px;font-size:10px;font-weight:600;margin-top:0">TONE (1) ▾</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Grouped by category</h3>
+      <p>Issues grouped under collapsible sections (Grammar, Style, Tone, Structure). Summary badges at the top show counts.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-family:sans-serif;font-size:12px;padding:8px;background:#f5f5f5;border-radius:4px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="color:#666;font-size:10px">Issue 1 of 3</span>
+          <div style="display:flex;gap:4px">
+            <span style="background:#eee;color:#555;padding:2px 6px;border-radius:3px;font-size:10px">◀ Prev</span>
+            <span style="background:#3498db;color:#fff;padding:2px 6px;border-radius:3px;font-size:10px">Next ▶</span>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid #ddd;border-radius:4px;padding:8px">
+          <div style="color:#e74c3c;font-size:10px;font-weight:600;margin-bottom:4px">GRAMMAR</div>
+          <div style="color:#555;font-size:10px;margin-bottom:6px">Paragraph 2, Sentence 1</div>
+          <div style="background:#fff3f3;padding:6px;border-radius:3px;margin-bottom:6px;color:#333">"Their going to the store to buy groceries."</div>
+          <div style="color:#555;font-size:10px;margin-bottom:4px">Suggested fix:</div>
+          <div style="background:#f0fff4;padding:6px;border-radius:3px;margin-bottom:6px;color:#333">"They're going to the store to buy groceries."</div>
+          <div style="color:#555;font-size:10px;margin-bottom:6px">Explanation: "Their" is a possessive pronoun; "They're" is the contraction for "they are".</div>
+          <div style="display:flex;gap:4px">
+            <span style="background:#2ecc71;color:#fff;padding:3px 10px;border-radius:3px;font-size:10px">Accept fix</span>
+            <span style="background:#eee;color:#555;padding:3px 10px;border-radius:3px;font-size:10px">Ignore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Step-through reviewer</h3>
+      <p>One issue at a time with Prev/Next navigation. Shows full context, explanation, and the exact sentence. Like Word's built-in spell-check flow.</p>
+    </div>
+  </div>
+
+</div>
